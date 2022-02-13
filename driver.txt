@@ -1,0 +1,30 @@
+
+Contents of the job queue:
+[323] Job: test1a, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[323] Job: test1, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[316] Job: test2, pri: 50, u: 7, g: 5, proc: 128, mem: 512, time: 300
+[181] Job: test3, pri: 20, u: 3, g: 0, proc: 128, mem: 1024, time: 1800
+Dump the queue:
+(((316)323(181))323)
+
+Contents of the job queue:
+[1800] Job: test3, pri: 20, u: 3, g: 0, proc: 128, mem: 1024, time: 1800
+[300] Job: test2, pri: 50, u: 7, g: 5, proc: 128, mem: 512, time: 300
+[120] Job: test1, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[120] Job: test1a, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+Dump the queue:
+((((120)120)300)1800)
+
+Contents of the job queue:
+[323] Job: test1a, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[323] Job: test1, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[316] Job: test2, pri: 50, u: 7, g: 5, proc: 128, mem: 512, time: 300
+[181] Job: test3, pri: 20, u: 3, g: 0, proc: 128, mem: 1024, time: 1800
+Dump the queue:
+((((181)316)323)323)
+
+Final queue in priority order:
+[323] Job: test1a, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[323] Job: test1, pri: 50, u: 3, g: 11, proc: 16, mem: 1024, time: 120
+[316] Job: test2, pri: 50, u: 7, g: 5, proc: 128, mem: 512, time: 300
+[181] Job: test3, pri: 20, u: 3, g: 0, proc: 128, mem: 1024, time: 1800
